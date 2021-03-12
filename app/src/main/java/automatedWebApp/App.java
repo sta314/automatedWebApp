@@ -8,17 +8,20 @@ public class App {
         ArrayList<Integer> curList = new ArrayList<>();
 
         for (Integer i : list){
-            if (i == pivot)
+            if (i == pivot){
                 if (getEqualToo)
                     curList.add(i);
-            else if (i > pivot)
+            }
+            else if (i > pivot){
                 if (getHigher)
                     curList.add(i);
-            else
+            }
+            else{
                 if (!getHigher)
                     curList.add(i);
+            }
         }
 
-        return list;
+        return curList;
     }
 }
